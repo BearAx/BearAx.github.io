@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --paper: #ded6c9;
-  --ink: #29241f;
-  --muted: #70675e;
-  --accent: #925b46;
-  --sage: #737a67;
-  --line: #a79e91;
+  --paper: #f7f5ef;
+  --ink: #101c28;
+  --muted: #596873;
+  --accent: #ff6845;
+  --navy-soft: #1a2a37;
+  --line: #aab4bb;
   --sans: var(--font-geist-sans), Arial, sans-serif;
   --mono: var(--font-geist-mono), "Courier New", monospace;
 }
@@ -15,7 +15,7 @@
 html { scroll-behavior: smooth; }
 body { background: var(--paper); color: var(--ink); font-family: var(--sans); margin: 0; text-rendering: optimizeLegibility; }
 a { color: inherit; text-decoration: none; }
-::selection { background: var(--accent); color: #fffaf0; }
+::selection { background: var(--accent); color: var(--ink); }
 
 .masthead {
   align-items: center;
@@ -42,6 +42,10 @@ a { color: inherit; text-decoration: none; }
   display: grid;
   grid-template-columns: 72px minmax(0, 1fr) 230px;
   min-height: min(790px, calc(100vh - 72px));
+  background-image:
+    linear-gradient(rgba(16, 28, 40, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 28, 40, 0.055) 1px, transparent 1px);
+  background-size: 84px 84px;
 }
 
 .rail-label {
@@ -75,7 +79,7 @@ a { color: inherit; text-decoration: none; }
 
 .hero-index { border-left: 1px solid var(--ink); display: flex; flex-direction: column; font-size: 10px; justify-content: flex-end; letter-spacing: 0.08em; }
 .hero-index span { border-top: 1px solid var(--ink); line-height: 1.4; padding: 20px; }
-.hero-index span:first-child { background: var(--sage); color: #fffaf0; }
+.hero-index span:first-child { background: var(--ink); color: var(--paper); }
 
 .work { margin: 0 auto; max-width: 1600px; padding: 110px clamp(20px, 5vw, 80px) 130px; }
 .section-label { border-bottom: 1px solid var(--ink); display: flex; font-size: 10px; justify-content: space-between; letter-spacing: 0.1em; padding-bottom: 13px; }
@@ -93,13 +97,13 @@ a { color: inherit; text-decoration: none; }
 .project-detail a:hover, .project-detail a:focus-visible { border-color: var(--accent); color: var(--accent); }
 
 .footer {
-  background: #312b26;
+  background: var(--ink);
   color: var(--paper);
   padding: 96px clamp(20px, 5vw, 80px) 48px;
 }
 
 .footer-label {
-  color: #beb3a5;
+  color: #aab6bf;
   font-family: var(--mono);
   font-size: 10px;
   letter-spacing: 0.1em;
@@ -118,7 +122,7 @@ a { color: inherit; text-decoration: none; }
 
 .footer-meta {
   align-items: end;
-  border-top: 1px solid #74695f;
+  border-top: 1px solid #40515e;
   display: grid;
   font-family: var(--mono);
   font-size: 10px;
@@ -129,7 +133,7 @@ a { color: inherit; text-decoration: none; }
   text-transform: uppercase;
 }
 
-.footer-meta > p { color: #beb3a5; margin: 0; }
+.footer-meta > p { color: #aab6bf; margin: 0; }
 .footer-meta > div { display: flex; gap: 28px; justify-content: flex-end; }
 .footer-meta a { border-bottom: 1px solid transparent; padding-bottom: 5px; }
 .footer-meta a:hover, .footer-meta a:focus-visible { border-color: var(--paper); }
