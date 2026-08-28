@@ -13,9 +13,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aleksandr Medvedev | ML Research & Systems Engineer",
+  metadataBase: new URL("https://bearax.github.io"),
+  title: "Aleksandr Medvedev — ML Research / Systems",
   description:
-    "ML research and systems engineering focused on model quality, reproducible experiments, and efficient PyTorch training.",
+    "Computer science student building and evaluating ML systems, with work in model routing, evaluation, and reproducible experiments.",
+  openGraph: {
+    title: "Aleksandr Medvedev — ML Research / Systems",
+    description:
+      "Computer science student building and evaluating ML systems.",
+    type: "website",
+    url: "https://bearax.github.io",
+    images: [{ url: "/og.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aleksandr Medvedev — ML Research / Systems",
+    description:
+      "Computer science student building and evaluating ML systems.",
+    images: ["/og.png"],
+  },
 };
 
 export default function RootLayout({
