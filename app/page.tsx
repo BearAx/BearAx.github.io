@@ -51,22 +51,22 @@ export default function Home() {
             ML systems<span>.</span>
           </h1>
           <div className="hero-bottom">
-            <p className="role">Computer science student / ML engineer</p>
+            <p className="role">Computer science student / seeking ML internships</p>
             <div>
               <p className="statement">
                 My work focuses on model evaluation, routing, and reproducible
                 experiments in Python and PyTorch.
               </p>
               <a className="availability" href="mailto:medvedguk@gmail.com">
-                Open to ML engineering internships <span>↗</span>
+                Available for internship roles <span>↗</span>
               </a>
             </div>
           </div>
         </div>
-        <div className="hero-index" aria-label="Areas of focus">
-          <span>01 / evaluate</span>
-          <span>02 / systems</span>
-          <span>03 / research</span>
+        <div className="hero-index" aria-label="Target positions">
+          <span>01 / ML Research Engineer Intern</span>
+          <span>02 / ML Systems Engineer Intern</span>
+          <span>03 / Applied ML / LLM Engineer Intern</span>
         </div>
       </section>
 
@@ -99,7 +99,7 @@ export default function Home() {
 
       <footer className="footer">
         <p className="footer-label">Contact / availability</p>
-        <h2>Interested in rigorous ML engineering.</h2>
+        <h2>Seeking ML research, systems, and applied LLM roles.</h2>
         <div className="footer-meta">
           <p>Python · PyTorch · FastAPI · evaluation · Docker</p>
           <div>
