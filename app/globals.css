@@ -4,7 +4,6 @@
   --paper: #f7f5ef;
   --ink: #101c28;
   --muted: #596873;
-  --accent: #ff6845;
   --navy-soft: #1a2a37;
   --line: #aab4bb;
   --sans: var(--font-geist-sans), Arial, sans-serif;
@@ -15,7 +14,7 @@
 html { scroll-behavior: smooth; }
 body { background: var(--paper); color: var(--ink); font-family: var(--sans); margin: 0; text-rendering: optimizeLegibility; }
 a { color: inherit; text-decoration: none; }
-::selection { background: var(--accent); color: var(--ink); }
+::selection { background: #d8e0e5; color: var(--ink); }
 
 .masthead {
   align-items: center;
@@ -32,10 +31,10 @@ a { color: inherit; text-decoration: none; }
 
 .masthead p { margin: 0; text-align: center; }
 .mark { font-family: var(--sans); font-size: 19px; font-weight: 800; justify-self: start; letter-spacing: -0.08em; }
-.mark span, .hero h1 span { color: var(--accent); }
+.mark span, .hero h1 span { color: inherit; }
 .masthead-links { display: flex; gap: 24px; justify-self: end; }
 .masthead-links a { border-bottom: 1px solid transparent; padding: 5px 0; }
-.masthead-links a:hover, .masthead-links a:focus-visible { border-color: var(--accent); color: var(--accent); }
+.masthead-links a:hover, .masthead-links a:focus-visible { border-color: var(--ink); }
 
 .hero {
   border-bottom: 1px solid var(--ink);
@@ -75,7 +74,7 @@ a { color: inherit; text-decoration: none; }
 .role { font-size: 11px; letter-spacing: 0.07em; line-height: 1.6; margin: 0; max-width: 240px; }
 .statement { font-size: clamp(20px, 2.2vw, 34px); letter-spacing: -0.035em; line-height: 1.18; margin: 0; max-width: 720px; }
 .availability { border-bottom: 1px solid var(--ink); display: inline-flex; font-family: var(--mono); font-size: 10px; gap: 18px; letter-spacing: 0.05em; margin-top: 30px; padding-bottom: 7px; text-transform: uppercase; }
-.availability:hover, .availability:focus-visible { border-color: var(--accent); color: var(--accent); }
+.availability:hover, .availability:focus-visible { border-color: var(--muted); color: var(--muted); }
 
 .hero-index { border-left: 1px solid var(--ink); display: flex; flex-direction: column; font-size: 10px; justify-content: flex-end; letter-spacing: 0.08em; }
 .hero-index span { border-top: 1px solid var(--ink); line-height: 1.4; padding: 20px; }
@@ -86,15 +85,13 @@ a { color: inherit; text-decoration: none; }
 .work > h2 { font-size: clamp(42px, 6vw, 92px); font-weight: 600; letter-spacing: -0.065em; line-height: 0.95; margin: 58px 0 76px; }
 .project-list { border-bottom: 1px solid var(--ink); }
 .project { border-top: 1px solid var(--ink); display: grid; gap: 28px; grid-template-columns: 60px 1.05fr 1.2fr 1.35fr; padding: 34px 0 40px; }
-.project-number { color: var(--accent); font-size: 11px; }
+.project-number { color: var(--muted); font-size: 11px; }
 .project-title > p { color: var(--muted); font-size: 9px; letter-spacing: 0.08em; margin: 0 0 12px; }
 .project-title h3 { font-size: clamp(21px, 2.3vw, 36px); font-weight: 620; letter-spacing: -0.05em; margin: 0; }
-.project-summary, .project-detail p { font-size: 15px; line-height: 1.55; margin: 0; }
+.project-summary { font-size: 15px; line-height: 1.55; margin: 0; }
 .project-detail { display: flex; flex-direction: column; gap: 24px; }
-.project-detail p { color: var(--muted); }
-.project-detail code { color: var(--accent); font-family: var(--mono); font-size: 10px; letter-spacing: 0.04em; text-transform: uppercase; }
 .project-detail a { align-self: flex-start; border-bottom: 1px solid var(--ink); font-family: var(--mono); font-size: 10px; letter-spacing: 0.05em; padding-bottom: 6px; text-transform: uppercase; }
-.project-detail a:hover, .project-detail a:focus-visible { border-color: var(--accent); color: var(--accent); }
+.project-detail a:hover, .project-detail a:focus-visible { border-color: var(--muted); color: var(--muted); }
 
 .footer {
   background: var(--ink);

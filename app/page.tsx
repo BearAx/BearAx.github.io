@@ -4,24 +4,9 @@ const projects = [
     name: "BudgetRoute-LLM",
     focus: "Routing / evaluation / serving",
     summary:
-      "A typed system for routing requests between local language models while recording quality, latency, uncertainty, and provenance.",
-    result:
-      "On a held-out Qwen MMLU study, the learned router reached 51% accuracy versus 53% for always-large and increased observed p50 latency by 5.3%.",
-    note: "Negative result: the available routing signals were not sufficient.",
+      "A typed system for routing requests between local language models and tracking quality, latency, uncertainty, and provenance for reproducible evaluation.",
     href: "https://github.com/BearAx/budgetroute-llm",
     linkLabel: "View repository",
-  },
-  {
-    number: "02",
-    name: "SemanticSplat",
-    focus: "3D scene understanding / team project",
-    summary:
-      "A research prototype for language-grounded object search in 3D Gaussian Splatting scenes using a hierarchical semantic index.",
-    result:
-      "The published demo comparison checked 4 of 19 views and used 6,430 versus 26,604 input tokens with graph-pruned search.",
-    note: "Co-author. Results are explicitly labeled as a demo/simulated benchmark.",
-    href: "https://github.com/BearAx/beyond-proximity-public",
-    linkLabel: "View public mirror",
   },
 ] as const;
 
@@ -72,10 +57,10 @@ export default function Home() {
 
       <section className="work" id="work" aria-labelledby="work-title">
         <div className="section-label">
-          <span>Selected work</span>
-          <span>Two projects</span>
+          <span>Selected project</span>
+          <span>Repository</span>
         </div>
-        <h2 id="work-title">Evidence, including when it fails.</h2>
+        <h2 id="work-title">Budget-aware LLM routing.</h2>
         <div className="project-list">
           {projects.map((project) => (
             <article className="project" key={project.name}>
@@ -86,8 +71,6 @@ export default function Home() {
               </div>
               <p className="project-summary">{project.summary}</p>
               <div className="project-detail">
-                <p>{project.result}</p>
-                <code>{project.note}</code>
                 <a href={project.href} target="_blank" rel="noreferrer">
                   {project.linkLabel} <span aria-hidden="true">↗</span>
                 </a>
