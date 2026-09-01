@@ -3,7 +3,7 @@
 Personal CV and project portfolio for Aleksandr Medvedev, focused on model
 quality, reproducible experiments, and efficient PyTorch systems.
 
-Live site: [bearax.github.io](https://bearax.github.io)
+Live site: [bearax.github.io](https://medvax-ai.github.io)
 
 ## Local development
 
