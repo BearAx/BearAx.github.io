@@ -5,7 +5,7 @@ const projects = [
     focus: "Routing / evaluation / serving",
     summary:
       "A typed system for routing requests between local language models and tracking quality, latency, uncertainty, and provenance for reproducible evaluation.",
-    href: "https://github.com/BearAx/budgetroute-llm",
+    href: "https://github.com/MedvAx-AI/budgetroute-llm",
     linkLabel: "View repository",
   },
 ] as const;
@@ -19,7 +19,7 @@ export default function Home() {
         </a>
         <p>ML research / systems</p>
         <div className="masthead-links">
-          <a href="https://github.com/BearAx" target="_blank" rel="noreferrer">
+          <a href="https://github.com/MedvAx-AI" target="_blank" rel="noreferrer">
             GitHub
           </a>
           <a href="mailto:medvedguk@gmail.com">Email</a>
@@ -87,8 +87,8 @@ export default function Home() {
           <p>Python · PyTorch · FastAPI · evaluation · Docker</p>
           <div>
             <a href="mailto:medvedguk@gmail.com">medvedguk@gmail.com ↗</a>
-            <a href="https://github.com/BearAx" target="_blank" rel="noreferrer">
-              github.com/BearAx ↗
+            <a href="https://github.com/MedvAx-AI" target="_blank" rel="noreferrer">
+              github.com/MedvAx-AI ↗
             </a>
           </div>
         </div>

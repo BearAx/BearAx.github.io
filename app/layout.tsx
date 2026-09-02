@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bearax.github.io"),
+  metadataBase: new URL("https://medvax-ai.github.io"),
   title: "Aleksandr Medvedev — ML Research / Systems",
   description:
     "Computer science student building and evaluating ML systems, with work in model routing, evaluation, and reproducible experiments.",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       "Computer science student building and evaluating ML systems.",
     type: "website",
-    url: "https://bearax.github.io",
+    url: "https://medvax-ai.github.io",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
   twitter: {
