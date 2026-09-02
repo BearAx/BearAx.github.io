@@ -55,6 +55,38 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="about" id="about" aria-labelledby="about-title">
+        <div className="section-label">
+          <span>About</span>
+          <span>Focus / skills</span>
+        </div>
+        <div className="about-grid">
+          <h2 id="about-title">Reliable models, measured systems.</h2>
+          <div className="about-content">
+            <p className="about-copy">
+              I’m a computer science student at Innopolis University focused on
+              building reliable ML systems. I work on model evaluation,
+              reproducible experimentation, and efficient Python/PyTorch
+              inference, with a particular interest in LLM quality and routing.
+            </p>
+            <div className="skills" aria-label="Core skills">
+              <div>
+                <span>Core</span>
+                <p>Python · PyTorch · Transformers</p>
+              </div>
+              <div>
+                <span>ML practice</span>
+                <p>Model evaluation · experiment design · reproducibility</p>
+              </div>
+              <div>
+                <span>Systems</span>
+                <p>FastAPI · Docker · Linux · GitHub Actions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="work" id="work" aria-labelledby="work-title">
         <div className="section-label">
           <span>Selected project</span>
@@ -84,7 +116,7 @@ export default function Home() {
         <p className="footer-label">Contact / availability</p>
         <h2>Seeking ML research, systems, and applied LLM roles.</h2>
         <div className="footer-meta">
-          <p>Python · PyTorch · FastAPI · evaluation · Docker</p>
+          <p>Python · PyTorch · Transformers · FastAPI · Docker · Linux</p>
           <div>
             <a href="mailto:medvedguk@gmail.com">medvedguk@gmail.com ↗</a>
             <a href="https://github.com/MedvAx-AI" target="_blank" rel="noreferrer">
